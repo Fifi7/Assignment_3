@@ -1,0 +1,313 @@
+:root{
+    --primary-color: white;
+    --secondary-color: black;
+    --background-color: linear-gradient(#d2001a, #7462ff, #d52323);
+  
+  }
+  
+  *{
+      padding: 0;
+      margin: 0;
+      font-family: 'Be Vietnam Pro', sans-serif;
+      font-family: 'Inter', sans-serif;
+      font-family: 'Victor Mono', monospace;
+      box-sizing: border-box;
+  }
+  
+  .hero{
+      height: 100vh;
+      width: 100%;
+      background: linear-gradient(45deg, #d2001a, #7462ff,#d52323);
+      background-size: 200% 200%;
+      animation: color 12s ease-in-out infinite;
+  }
+  
+  @keyframes color{
+      0%{
+          background-position: 0 50%;
+      }
+      50%{
+          background-position: 100% 50%;
+      }
+      100%{
+          background-position: 0 50%;
+      }
+  }
+  
+  nav{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 45px;
+      padding-left: 8%;
+      padding-right: 8%;
+  }
+  
+  .hero__logo{
+      color:var(--primary-color);
+      font-size: 50px;
+  }
+  
+  span{
+      color: #d2001a;
+  }
+  
+  nav ul li{
+      list-style-type: none;
+      display: inline-block;
+      padding: 10px 25px;
+  }
+  
+  nav ul li a{
+      color: var(--primary-color);
+      text-decoration: none;
+      font-weight: bold;
+      text-transform: capitalize;
+  }
+  
+  nav ul li a:hover{
+      color:#f9004d;
+      transition: .4s;
+  }
+  
+  .hero__button{
+      background-color: #d2001a;
+      color: var(--primary-color);
+      text-decoration: none;
+      border: 2px solid transparent;
+      font-weight: bold;
+      padding: 10px 25px;
+      border-radius: 30px;
+      transition: transform .4s;
+  }
+   .hero__button:hover{
+      transform: scale(1.2);
+   }
+  .hero__content{
+      position: absolute;
+      top: 50%;
+      left: 8%;
+      transform: translateY(-50%);
+  }
+  
+  h1{
+      color:var(--primary-color);
+      margin: 20px 0px 20px;
+      font-size: 75px;
+  }
+  
+  h2{
+      color: var(--primary-color);
+      font-size: 25px;
+      margin-bottom: 50px;
+  
+  }
+  
+  .about{
+      width: 100%;
+      padding: 100px 0px;
+      background:linear-gradient(#afc3ed,#d2001a);
+  }
+  
+  .about img{
+      height: auto;
+      width: 430px;
+      border-radius: 50%;
+      position: relative;
+      top: -100px;
+  }
+  
+  .main__about-text{
+      width: 500px;
+      margin-bottom: -100px;
+  }
+  
+  .main{
+      width: 1130px;
+      max-width: 95%;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+  }
+  
+  .main__about-text h2{
+      color: var(--primary-color);
+      font-size: 75px;
+      text-transform: capitalize;
+      margin-bottom: 20px;
+  }
+  
+  .main__about-text h5{
+      color: var(--primary-color);
+      letter-spacing: 2px;
+      font-size: 22px;
+      margin-bottom: 25px;
+      text-transform: capitalize;
+  }
+  
+  .main__about-text p{
+      color: var(--secondary-color);
+      letter-spacing: 1px;
+      font-size: 18px;
+      margin-bottom: 45px;
+  }
+  
+  button{
+      background-color: var(--secondary-color);
+      color: var(--primary-color);
+      text-decoration: none;
+      border: 2px solid transparent;
+      font-weight: bold;
+      padding: 13px 30px;
+      border-radius: 30px;
+      transition: .4s;
+      margin-top: -20px;
+      position: relative;
+      bottom: 20px; 
+  }
+  
+  button:hover{
+      border: 2px solid gray;
+      cursor: pointer;
+  }
+  
+  .projects{
+      background: linear-gradient(45deg, #d2001a, #7462ff,#d52323, rgb(123, 14, 201));
+      background-size: 200% 200%;
+      animation: color 12s ease-in-out infinite;
+      width: 100%;
+      padding: 100px 0px;
+  }
+  
+  .title h2{
+      color: var(--primary-color);
+      font-size: 75px;
+      width: 1130px;
+      margin: 30px auto;
+      text-align: center;
+  }
+  
+  .container {
+    max-width: 950px;
+    width: 100%;
+    overflow: hidden;
+    padding: 80px 0;
+    margin: 0 auto;
+    }
+  
+    .container .card-holder{
+      display: flex;
+      justify-content: space-evenly;
+      width: 200%;
+      transition: 1s;
+    }
+    #two:checked ~ .card-holder{
+      margin-left: -100%;
+    }
+    .hide{
+      display: none;
+    }
+  
+    .container .card-holder .cards{
+      width: calc(100% / 2 - 10px);
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 20px;
+      justify-content: space-between;
+      
+    } 
+  
+    .card-holder .cards .card{
+      width: calc(100% / 3 - 10px);
+      background: #7462ff;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+      transition: all 0.4s ease;
+      text-align: center;
+      
+    }
+  
+    .card-holder .cards .card:hover{
+      transform: translateY(-15px);
+    }
+  
+    .cards .card .card-content{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+  
+    h5{
+      color:var(--secondary-color);
+      font-size: 23px;
+      margin-bottom: 15px;
+  }
+  
+  .pra p{
+      color: var(--secondary-color);
+      font-size: 16px;
+      line-height: 27px;
+      margin-bottom: 25px;
+  }
+  
+  .details button{
+  
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    position: relative;
+    margin-top: 30px;
+  
+  }
+  
+  .details button :hover{
+    background-color: #d2001a;
+    border: 2px solid gray;
+    cursor: pointer;
+  }
+  
+    .container .button{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin: 20px;
+    }
+  
+    .button label{
+      height: 15px;
+      width: 15px;
+      border-radius: 20px;
+      background: #fff;
+      margin: 0 4px;
+      cursor: pointer;
+      transition: all 0.5s ease;
+    }
+    .button label.active{
+      width: 35px;
+    }
+  
+    #one:checked ~ .button .one{
+      width: 35px;
+    }
+    #one:checked ~ .button .two{
+      width: 15px;
+    }
+    #two:checked ~ .button .one{
+      width: 15px;
+    }
+    #two:checked ~ .button .two{
+      width: 35px;
+    }
+  
+  
+  
+  
+  
