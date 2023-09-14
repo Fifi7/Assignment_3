@@ -1,7 +1,7 @@
 :root{
-    --primary-color: white;
+    --primary-color: black;
     --secondary-color: black;
-    --background-color: linear-gradient(#d2001a, #7462ff, #d52323);
+    --background-color: white;
   
   }
   
@@ -15,9 +15,8 @@
   }
   
   .hero{
-      height: 100vh;
       width: 100%;
-      background: linear-gradient(45deg, #d2001a, #7462ff,#d52323);
+      background: pink;
       background-size: 200% 200%;
       animation: color 12s ease-in-out infinite;
   }
@@ -33,14 +32,32 @@
           background-position: 0 50%;
       }
   }
+  .logo {
+    width: 100px; 
+    margin-right: 20px; 
+}
+
+  nav img {
+    width: 150px; 
+    height: auto; 
+    margin-left: 20px; 
+}
   
   nav{
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding-top: 45px;
+      padding: 45px 8%;
       padding-left: 8%;
       padding-right: 8%;
+      background-color: grey;
+  }
+
+  .nav-links{
+    display: flex;
+    gap: 30px; 
+    list-style-type: none;
+    margin-right: 20px;
   }
   
   .hero__logo{
@@ -48,14 +65,12 @@
       font-size: 50px;
   }
   
-  span{
-      color: #d2001a;
-  }
+ 
   
   nav ul li{
       list-style-type: none;
       display: inline-block;
-      padding: 10px 25px;
+      
   }
   
   nav ul li a{
@@ -66,17 +81,17 @@
   }
   
   nav ul li a:hover{
-      color:#f9004d;
+      color:plum;
       transition: .4s;
   }
   
   .hero__button{
-      background-color: #d2001a;
+      background-color: #dda0dd;
       color: var(--primary-color);
       text-decoration: none;
       border: 2px solid transparent;
       font-weight: bold;
-      padding: 10px 25px;
+      padding: 10px 10px;
       border-radius: 30px;
       transition: transform .4s;
   }
@@ -84,35 +99,59 @@
       transform: scale(1.2);
    }
   .hero__content{
-      position: absolute;
-      top: 50%;
-      left: 8%;
-      transform: translateY(-50%);
+      margin-left:12%;
+      display: flex;
+      align-items: center;
   }
+
+  .hero__text{
+    flex:1;
+    padding-right: 20px;
+  }
+  .hero__text p {
+    font-family: 'Your Preferred Font', sans-serif;
+}
+
+  .hero__image{
+    flex:1;
+    text-align: right;
+  }
+  .hero__image img {
+    max-width: 100%;
+    height: auto;
+    max-height: 500px; 
+}
   
   h1{
       color:var(--primary-color);
       margin: 20px 0px 20px;
-      font-size: 75px;
+      font-size: 50px;
+      margin-bottom: 20px;
   }
   
   h2{
       color: var(--primary-color);
       font-size: 25px;
-      margin-bottom: 50px;
+      margin-bottom: 30px;
   
   }
   
   .about{
       width: 100%;
       padding: 100px 0px;
-      background:linear-gradient(#afc3ed,#d2001a);
+      background:white;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      
+    
+      
   }
   
   .about img{
       height: auto;
       width: 430px;
-      border-radius: 50%;
+      border-radius: 60%;
       position: relative;
       top: -100px;
   }
@@ -120,6 +159,12 @@
   .main__about-text{
       width: 500px;
       margin-bottom: -100px;
+      font-family: 'Your Preferred Font', sans-serif;
+  }
+
+  .main__about-text p{
+    font-family: 'Your Preferred Font', sans-serif;
+
   }
   
   .main{
@@ -147,37 +192,29 @@
   }
   
   .main__about-text p{
+    font-family: 'Your Preferred Font', sans-serif;
       color: var(--secondary-color);
-      letter-spacing: 1px;
+      letter-spacing: 0.5px;
       font-size: 18px;
-      margin-bottom: 45px;
+      margin-bottom: 15px;
+      text-align: justify;
+      border-bottom: 1px solid plum;
+      padding-bottom: 15px;
+      margin-bottom: 30px;
   }
   
-  button{
-      background-color: var(--secondary-color);
-      color: var(--primary-color);
-      text-decoration: none;
-      border: 2px solid transparent;
-      font-weight: bold;
-      padding: 13px 30px;
-      border-radius: 30px;
-      transition: .4s;
-      margin-top: -20px;
-      position: relative;
-      bottom: 20px; 
-  }
-  
-  button:hover{
-      border: 2px solid gray;
-      cursor: pointer;
-  }
-  
+  .main__about-text ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+ 
   .projects{
-      background: linear-gradient(45deg, #d2001a, #7462ff,#d52323, rgb(123, 14, 201));
+      background: pink;
       background-size: 200% 200%;
       animation: color 12s ease-in-out infinite;
       width: 100%;
-      padding: 100px 0px;
+    
   }
   
   .title h2{
@@ -220,7 +257,7 @@
   
     .card-holder .cards .card{
       width: calc(100% / 3 - 10px);
-      background: #7462ff;
+      background: lightcoral;
       border-radius: 12px;
       padding: 30px;
       box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
@@ -229,9 +266,6 @@
       
     }
   
-    .card-holder .cards .card:hover{
-      transform: translateY(-15px);
-    }
   
     .cards .card .card-content{
       width: 100%;
@@ -258,7 +292,7 @@
   .details button{
   
     background-color: var(--secondary-color);
-    color: var(--primary-color);
+    color: white;
     text-decoration: none;
     font-weight: bold;
     padding: 13px 30px;
@@ -267,12 +301,7 @@
     margin-top: 30px;
   
   }
-  
-  .details button :hover{
-    background-color: #d2001a;
-    border: 2px solid gray;
-    cursor: pointer;
-  }
+
   
     .container .button{
       width: 100%;
@@ -307,6 +336,50 @@
       width: 35px;
     }
   
+    .footer {
+      background-color: grey;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+      padding: 45px 8%;
+      padding-left: 8%;
+      padding-right: 8%;
+  }
+  
+  .footer__content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  
+  .footer p {
+      margin: 0;
+      color: black;
+  }
+  
+  .footer__links {
+      list-style-type: none;
+      padding: 0;
+  }
+  
+  .footer__links li {
+      display: inline;
+      margin-right: 20px;
+  }
+  
+  .footer__links a {
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+  }
+  
+  .footer__links a:hover {
+      text-decoration: none;
+      color:plum;
+      transition: .4s;
+  }
   
   
   
