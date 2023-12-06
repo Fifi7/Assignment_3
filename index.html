@@ -7,7 +7,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Inter:wght@100;200;300;400;500&family=Victor+Mono:wght@300;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <title>My Portfolio Website</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+
+
+
+  <title>My Portfolio Website</title>
   </head>
   <body>
     <!-- Hero Section -->
@@ -16,18 +21,22 @@
         <img src="./Assets/Images/GCC-Logo_Blue.png" alt="My Portfolio Logo" class="logo">
         <ul class="nav-links">
           <li>
-            <a href="#">Home</a>
+            <a href="#hero">Home</a>
           </li>
           <li>
-            <a href="#">GitHub</a>
+            <a href="#about">About</a>
           </li>
-          <li>
-            <a href="#">Portfolio</a>
+          <li class="dropdown">
+            <a href="#">Contact</a>
+            <div class="dropdown-content">
+              <p>Email: refilwet97@gmail.com</p>
+              <p>Phone: 082 358 0362</p>
+          </div>
           </li>
         </ul>
-        <a href="#" class="hero__button">Contact Me</a>
+        <a href="#projects" class="hero__button">Portfolio</a>
       </nav>
-      <div class="hero__content">
+      <div id="hero" class="hero__content">
         <div class = "hero__text">
         <h1>Refilwe Gololo</h1>
         <h2>Junior JAVA Developer</h2>
@@ -39,9 +48,9 @@
       </div>
       </div>
     <!-- My About Section -->
-    <section class="about" style="background-image: url(./Assets/Images/Pink\ butterfly\ wallpaper_3.jpeg);">
+    <section id="about" class="about" style="background-image: url(./Assets/Images/Pink\ butterfly\ wallpaper_3.jpeg);">
       <div class="main">
-        <img src="./Assets/Images/cat.png">
+        <img src="./Assets/Images/Profile.jpg">
         <div class="main__about-text">
           <h2>About Me</h2>
           <h5>Junior Java Developer</h5>
@@ -51,11 +60,15 @@
         <p>
           With a solid foundation in Java programming, backed by my Oracle Certified Associate certification, I am equipped to tackle complex coding challenges. My expertise extends to cloud computing, where I have a keen understanding of its principles and practical applications.
       </p>
-        </div>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/refilwe-gololo-a46726141?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BYgNES8L5TIqN%2BOtrykQevQ%3D%3D" target="_blank" class="icon-link"><i class="fa fa-linkedin-square fa-5x"></i></a>
+          <a href="https://github.com/Fifi7" target="_blank" class="icon-link"><i class="fa fa-github fa-5x"></i></a>
+      </div>
+      </div>
       </div>
     </section>
     <!-- My Projects Section -->
-    <div class="projects">
+    <div id="projects" class="projects">
       <div class="title">
         <h2>My Projects</h2>
       </div>
@@ -68,9 +81,10 @@
               <div class="card-content">
                 <h5>Front-end development</h5>
                 <div class="details">
-                  <p>My first front-end development project. I had to convert a given wireframe using Only HTML and CSS.</p>
+                  <p>My First Client Project.A fully responsive website using REACT.</p>
                   <p style="text-align: center;">
-                    <button type="card-button">Visit Project</button>
+                    <!-- <button type="card-button">Visit Project</button> -->
+                    <a href="project1_details.html" class="card-button">Visit Project</a>
                   </p>
                 </div>
               </div>
@@ -81,7 +95,7 @@
                 <div class="details">
                   <p>My first front-end development project. I had to convert a given wireframe using Only HTML and CSS.</p>
                   <p style="text-align: center;">
-                    <button type="card-button">Visit Project</button>
+                    <a href="project2_details.html" class="card-button">Visit Project</a>
                   </p>
                 </div>
               </div>
@@ -92,7 +106,7 @@
                 <div class="details">
                   <p>My first front-end development project. I had to convert a given wireframe using Only HTML and CSS.</p>
                   <p style="text-align: center;">
-                    <button type="card-button">Visit Project</button>
+                    <a href="project3_details.html" class="card-button">Visit Project</a>
                   </p>
                 </div>
               </div>
@@ -101,33 +115,33 @@
           <div class="cards">
             <div class="card">
               <div class="card-content">
-                <h5>Front-end development</h5>
+                <h5>Back-end development</h5>
                 <div class="details">
                   <p>My first front-end development project. I had to convert a given wireframe using Only HTML and CSS.</p>
                   <p style="text-align: center;">
-                    <button type="card-button">Visit Project</button>
+                    <a href="project4_details.html" class="card-button">Visit Project</a>
                   </p>
                 </div>
               </div>
             </div>
             <div class="card">
               <div class="card-content">
-                <h5>Front-end development</h5>
+                <h5>Back-end development</h5>
                 <div class="details">
                   <p>My first front-end development project. I had to convert a given wireframe using Only HTML and CSS.</p>
                   <p style="text-align: center;">
-                    <button type="card-button">Visit Project</button>
+                    <a href="project5_details.html" class="card-button">Visit Project</a>
                   </p>
                 </div>
               </div>
             </div>
             <div class="card">
               <div class="card-content">
-                <h5>Front-end development</h5>
+                <h5>FullStack development</h5>
                 <div class="details">
                   <p>My first front-end development project. I had to convert a given wireframe using Only HTML and CSS.</p>
                   <p style="text-align: center;">
-                    <button type="card-button">Visit Project</button>
+                    <a href="project6_details.html" class="card-button">Visit Project</a>
                   </p>
                 </div>
               </div>
@@ -144,10 +158,27 @@
           <p>&copy; 2023 Refilwe Gololo</p>
           <ul class="footer__links">
               <li><a href="#">Home</a></li>
-              <li><a href="#">Portfolio</a></li>
+              <li><a href="#">About</a></li>
               <li><a href="#">Contact</a></li>
           </ul>
         </div>
     </footer>
+
+    <!-- Add the following script to your HTML file -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+          anchor.addEventListener('click', function (e) {
+              e.preventDefault();
+
+              document.querySelector(this.getAttribute('href')).scrollIntoView({
+                  behavior: 'smooth'
+              });
+          });
+      });
+  });
+</script>
+
   </body>
 </html>
