@@ -7,7 +7,7 @@
   
   *{
       padding: 0;
-    
+      margin: 0;
       font-family: 'Be Vietnam Pro', sans-serif;
       font-family: 'Inter', sans-serif;
       font-family: 'Victor Mono', monospace;
@@ -176,7 +176,7 @@
       height: auto;
       width: 430px;
       border-radius: 60%;
-      position: relative;
+      
       
   }
   
@@ -247,9 +247,7 @@
   text-decoration: none;
 }
 
-.icon-link:hover {
-  color: plum; /* Change color on hover */
-}
+
 
   .projects{
       background: pink;
@@ -305,12 +303,15 @@
       box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
       transition: all 0.4s ease;
       text-align: center;
+      position: relative;
+      height:300px;
       
     }
   
   
     .cards .card .card-content{
-      width: 100%;
+      
+      height:100%;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -335,11 +336,15 @@
 
   .card-button{
     background-color: var(--secondary-color);
-    color: white;
+    color: plum;
     text-decoration: none;
     font-weight: bold;
-    padding: 13px 30px;
-    border-radius: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 10px; 
+    left: 50%;
+    transform: translateX(-50%); 
    
 
   }
@@ -380,12 +385,12 @@
   
     .footer {
       background-color: grey;
-      color: #fff;
-      padding: 20px 0;
       text-align: center;
-      padding: 45px 8%;
+      padding: 20px 5%;
       padding-left: 8%;
       padding-right: 8%;
+      width: 100%;
+      
   }
   
   .footer__content {
@@ -422,8 +427,26 @@
       color:plum;
       transition: .4s;
   }
+  .footer-dropdown {
+    position: relative;
+}
   
+  .footer-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 10px;
+    bottom:100%;
+    padding: 10px;
+
+}
   
+.footer__links .footer-dropdown:hover .footer-dropdown-content {
+  display: block;
+}
   
   
   .project-details {
